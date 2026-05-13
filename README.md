@@ -11,17 +11,6 @@ The model consists of a two-degree-of-freedom (2-DOF) system tracking both sprun
 *   **Mass Trackers:** Dual cascaded integrators tracking `Accel -> Velocity -> Position` for both masses.
 *   **Semi-Active Damper Block:** A custom MATLAB function routing `rel_vel` and `sprung_vel` to calculate dynamic real-time damping forces.
 
-## Variable Mapping Reference
-
-If you are modifying or pulling data from this repository, use the following block parameter designations:
-
-
-| Simulink Block Name | Workspace Variable Location | Physical Property |
-| :--- | :--- | :--- |
-| `out.rel_vel` | `out.rel_vel` | Relative suspension velocity ($\dot{z}_s - \dot{z}_u$) |
-| `out.damping_force` | `out.damping_force` | Calculated output force ($N$) from the valve logic |
-| `Damping Coefficient` | *Viewable via Scope* | Real-time damping coefficient $c$ ($N\cdot s/m$) |
-
 ## Plotting Characteristics
 
 Run the following script to generate the asymmetric force-velocity characteristic curve of your proportional valve:
