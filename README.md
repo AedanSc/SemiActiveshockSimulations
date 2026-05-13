@@ -4,7 +4,7 @@ A Simulink implementation of a 2-DOF quarter-car suspension model featuring a va
 
 ## System Architecture & Signal Flow
 
-![Simulink Model Architecture](docs)
+<img width="1600" height="1090" alt="image" src="https://github.com/user-attachments/assets/110f1c41-0739-4027-a3c9-7445289d674f" />
 
 The model consists of a two-degree-of-freedom (2-DOF) system tracking both sprung (body) and unsprung (wheel) masses:
 *   **Road Input:** Feeds terrain profiles into the tire deflection summing junction.
